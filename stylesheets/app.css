@@ -2,20 +2,59 @@
    Table of Contents
 -----------------------------------------------------
 :: Shared Styles
+:: Header
 :: Sidebar
+:: Footer
 */
 
 
 /* -----------------------------------------
    Shared Styles
 ----------------------------------------- */
+body {
 
+}
+h5 {
+  margin-bottom: 8px;
+}
+h2 iframe {
+  margin-left: 10px;
+}
+.ribbon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 
+/* -----------------------------------------
+   Header
+----------------------------------------- */
+#header {
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: url(../images/cantina.jpg) top right no-repeat;
+  border-bottom: 1px solid #ddd;
+}
+#header h4 {
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.7);
+}
 
 /* -----------------------------------------
    Sidebar
 ----------------------------------------- */
-#sidebar h5.subheader {
-  margin-bottom: 0;
+#sidebar h4.subheader {
+  margin-bottom: 10px;
 }
 
+/* -----------------------------------------
+   Footer
+----------------------------------------- */
+#footer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#footer #cantina-github {
+  background: url(../images/github_icon.png) center left no-repeat;
+  padding-left: 20px;
+}

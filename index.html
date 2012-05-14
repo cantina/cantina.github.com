@@ -35,24 +35,73 @@
 	<div class="container">
 
 		<div class="row">
-			<div class="twelve columns">
+			<div id="header" class="twelve columns">
 				<h1>Cantina</h1>
 				<h4 class="subheader">Node.js modules for building distributed applications</h4>
-				<hr />
 			</div>
 		</div>
 
 		<div class="row">
 			<!-- Main -->
 			<div id="main" class="eight columns">
-				<h2>Amino</h2>
+				<h2 id="amino">
+					Amino
+					<iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=cantina&repo=amino&type=fork" allowtransparency="true" frameborder="0" scrolling="0" width="53px" height="20px"></iframe>
+				</h2>
+				<h5 class="subheader">
+				  Amino is a toolkit for building scalable, fault-taulerant apps in Node.js. By using its simple API, you can harness the power of pub/sub, job queuing, and auto-load-balancing without any of the fuss and dependence on particular technologies.
+				</h5>
+				<h5>
+				  The API provides:
+				</h5>
+				<ul>
+				  <li><h6>pubsub</h6>Use amino.publish() and amino.subscribe() to send events between nodes in your cluster. (default driver: redis)</li>
+				  <li><h6>queue</h6>Use amino.queue() and amino.process() to queue jobs and process them. (default driver: amqp, i.e. RabbitMQ)</li>
+				  <li><h6>request</h6>Use amino.request() and amino.respond() to easily create REST APIs with auto-load-balancing and failover. (default driver: HTTP, uses pub/sub)</li>
+				  <li><h6>service</h6>Advanced: Use amino.createService() to register a service, and receive a port to listen on. This allows you to create generic TCP services.</li>
+			  </ul>
+				<h5>
+					Drivers:
+				</h5>
+				<h6 class="subheader">
+					Amino uses a pluggable driver system to provide the transport layer for its methods.
+					Currently available are:
+				</h6>
+				<ul>
+					<li><h6><a href="https://github.com/cantina/amino-driver-http">amino-driver-http</a></h6>HTTP driver for amino requests.</li>
+					<li><h6><a href="https://github.com/cantina/amino-driver-amqp">amino-driver-amqp</a></h6>AMQP driver for amino queue.</li>
+					<li><h6><a href="https://github.com/cantina/amino-driver-redis">amino-driver-redis</a></h6>Redis driver for amino pub/sub</li>
+					<li>More to come ...</li>
+				</ul>
+
+			  <hr />
+
+			  <h2 id="hardhat">
+					HardHat
+					<iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=cantina&repo=hardhat&type=fork" allowtransparency="true" frameborder="0" scrolling="0" width="53px" height="20px"></iframe>
+				</h2>
+				<h5 class="subheader">
+				  Scaffolding utility for blue-collar programmers.
+				</h5>
+				<h5>
+				  Features:
+				</h5>
+				<ul>
+				  <li><h6>scaffold()</h6>Copy a directory of scaffold folders & files (templates) to a new destination.  Your templates can be written using any engine that <a href="https://github.com/visionmedia/consolidate.js">consolidate</a> supports (currently 14 engines including jade, handlebars, etc.)</li>
+			  </ul>
 			</div>
 			<!-- /Main -->
 
 			<!-- Sidebar -->
 			<div id="sidebar" class="four columns">
-				<h5 class="subheader">Sponsored By</h5>
-				<h4>Terra Eclipse</h4>
+				<h4>Modules</h4>
+				<h5><a href="#amino">Amino</a></h5>
+				<h5><a href="#hardhat">HardHat</a></h5>
+
+				<hr />
+
+				<h4>Sponsored By</h4>
+				<h4 class="subheader">Terra Eclipse</h4>
 				<p><a href="http://www.terraeclipse.com">http://www.terraeclipse.com</a></p>
 				<p>
 					Terra Eclipse is a dependably innovative design and information technology consulting group located in Santa Cruz, CA. We have built our reputation upon providing clients with elegant and practical media design solutions.
@@ -65,11 +114,20 @@
 				</p>
 			</div>
 			<!-- /Sidebar -->
+		</div>
+
+		<div class="row">
+			<div id="footer" class="twelve columns">
+				<hr />
+				<a id="cantina-github" href="https://github.com/cantina">Cantina on GitHub</a>
+			</div>
+		</div>
 	</div>
 	<!-- /container -->
 
-
-
+	<a class="ribbon" href="https://github.com/cantina">
+		<img src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" />
+	</a>
 
 	<!-- Included JS Files -->
 	<script src="javascripts/jquery.min.js"></script>
