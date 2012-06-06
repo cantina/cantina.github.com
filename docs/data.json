@@ -1,0 +1,1258 @@
+{
+    "project": {
+        "name": "Cantina",
+        "description": "Cantina Application Framework, Plugins, and Services",
+        "version": "0.4.0",
+        "url": "http://cantina.github.com"
+    },
+    "files": {
+        "node_modules/cantina/lib/cli/create.js": {
+            "name": "node_modules/cantina/lib/cli/create.js",
+            "modules": {},
+            "classes": {},
+            "fors": {
+                "cantina.cli": 1
+            },
+            "namespaces": {}
+        },
+        "node_modules/cantina/lib/plugins/controllers.js": {
+            "name": "node_modules/cantina/lib/plugins/controllers.js",
+            "modules": {},
+            "classes": {
+                "cantina.plugins.controllers": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "node_modules/cantina/lib/plugins/http.js": {
+            "name": "node_modules/cantina/lib/plugins/http.js",
+            "modules": {},
+            "classes": {
+                "cantina.plugins.http": 1
+            },
+            "fors": {
+                "cantina.plugins.http": 1,
+                "app": 1
+            },
+            "namespaces": {}
+        },
+        "node_modules/cantina/lib/plugins/middleware.js": {
+            "name": "node_modules/cantina/lib/plugins/middleware.js",
+            "modules": {},
+            "classes": {
+                "cantina.plugins.middleware": 1
+            },
+            "fors": {
+                "app": 1,
+                "cantina.plugins.middleware": 1
+            },
+            "namespaces": {}
+        },
+        "node_modules/cantina/lib/plugins/utils.js": {
+            "name": "node_modules/cantina/lib/plugins/utils.js",
+            "modules": {},
+            "classes": {
+                "cantina.plugins.utils": 1
+            },
+            "fors": {
+                "app": 1,
+                "cantina.plugins.utils": 1
+            },
+            "namespaces": {}
+        },
+        "node_modules/cantina/lib/app.js": {
+            "name": "node_modules/cantina/lib/app.js",
+            "modules": {},
+            "classes": {
+                "app": 1
+            },
+            "fors": {
+                "app": 1
+            },
+            "namespaces": {}
+        },
+        "node_modules/cantina/lib/cantina.js": {
+            "name": "node_modules/cantina/lib/cantina.js",
+            "modules": {
+                "cantina": 1
+            },
+            "classes": {
+                "cantina": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "node_modules/cantina/lib/cli.js": {
+            "name": "node_modules/cantina/lib/cli.js",
+            "modules": {},
+            "classes": {
+                "cantina.cli": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "node_modules/cantina-views/lib/helpers.js": {
+            "name": "node_modules/cantina-views/lib/helpers.js",
+            "modules": {
+                "views": 1
+            },
+            "classes": {
+                "views.plugin.helpers": 1
+            },
+            "fors": {
+                "views.plugin.helpers": 1,
+                "app.views": 1
+            },
+            "namespaces": {}
+        },
+        "node_modules/cantina-views/lib/index.js": {
+            "name": "node_modules/cantina-views/lib/index.js",
+            "modules": {},
+            "classes": {
+                "views": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "node_modules/cantina-views/lib/partials.js": {
+            "name": "node_modules/cantina-views/lib/partials.js",
+            "modules": {},
+            "classes": {
+                "views.plugin.partials": 1
+            },
+            "fors": {
+                "views.plugin.partials": 1,
+                "app.views": 1
+            },
+            "namespaces": {}
+        },
+        "node_modules/cantina-views/lib/plugin.js": {
+            "name": "node_modules/cantina-views/lib/plugin.js",
+            "modules": {},
+            "classes": {
+                "app.views": 1,
+                "views.plugin": 1
+            },
+            "fors": {
+                "views.plugin": 1,
+                "app.views": 1,
+                "app": 1
+            },
+            "namespaces": {}
+        },
+        "node_modules/cantina-views/lib/registry.js": {
+            "name": "node_modules/cantina-views/lib/registry.js",
+            "modules": {},
+            "classes": {
+                "views.plugin.registry": 1
+            },
+            "fors": {
+                "views.plugin.registry": 1,
+                "app.views": 1
+            },
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "cantina": {
+            "name": "cantina",
+            "submodules": {
+                "views": 1
+            },
+            "classes": {
+                "cantina.cli": 1,
+                "cantina.plugins.controllers": 1,
+                "cantina.plugins.http": 1,
+                "app": 1,
+                "cantina.plugins.middleware": 1,
+                "cantina.plugins.utils": 1,
+                "cantina": 1,
+                "views.plugin.helpers": 1,
+                "app.views": 1,
+                "views": 1,
+                "views.plugin.partials": 1,
+                "views.plugin": 1,
+                "views.plugin.registry": 1
+            },
+            "fors": {
+                "cantina.cli": 1,
+                "cantina.plugins.http": 1,
+                "app": 1,
+                "cantina.plugins.middleware": 1,
+                "cantina.plugins.utils": 1,
+                "views.plugin.helpers": 1,
+                "app.views": 1,
+                "views.plugin.partials": 1,
+                "views.plugin": 1,
+                "views.plugin.registry": 1
+            },
+            "namespaces": {},
+            "tag": "main",
+            "file": "node_modules/cantina-views/lib/registry.js",
+            "line": 15,
+            "description": "Cantina Application Framework\n-----------------------------\n\nA framework for building interconnected applications and services.\n\nA cantina app/service is primarily a flatiron http application.  Cantina\nextends flatiron to (optionally) use amino as well as providing useful\nplugins and code structuring conventions.",
+            "exports": "{Function} CLI callback for the 'create' command.",
+            "requires": [
+                "path",
+                "prompt",
+                "hardhat",
+                "utils",
+                "fs"
+            ],
+            "itemtype": "main"
+        },
+        "views": {
+            "name": "views",
+            "submodules": {},
+            "classes": {
+                "views.plugin.helpers": 1,
+                "app.views": 1,
+                "views": 1,
+                "views.plugin.partials": 1,
+                "views.plugin": 1,
+                "views.plugin.registry": 1
+            },
+            "fors": {},
+            "is_submodule": 1,
+            "namespaces": {},
+            "module": "cantina",
+            "namespace": "",
+            "file": "node_modules/cantina-views/lib/registry.js",
+            "line": 15,
+            "description": "Cantina Views - Helpers Plugin\n--------------------------------\n\nExposes an api for adding dynamic helpers for binding template data.",
+            "tag": "main",
+            "itemtype": "main"
+        }
+    },
+    "classes": {
+        "cantina.cli": {
+            "name": "cantina.cli",
+            "shortname": "cantina.cli",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "cantina",
+            "namespace": "",
+            "file": "node_modules/cantina/lib/cli.js",
+            "line": 8,
+            "description": "Cantina CLI\n-----------\n\nA command-line interface for cantina.\n\nProvides:\n\n  - Scaffolding (`create`)\n\nTo see usage information you can run the `cantina` command with no additional\narguments.\n\n    $ cantina\n    help:\n    help:   Usage: cantina <command>\n    help:\n    help:   where <command> is one of:\n    help:       create\n    help:"
+        },
+        "cantina.plugins.controllers": {
+            "name": "cantina.plugins.controllers",
+            "shortname": "cantina.plugins.controllers",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "cantina",
+            "namespace": "",
+            "file": "node_modules/cantina/lib/plugins/controllers.js",
+            "line": 14,
+            "description": "Controllers Plugin\n------------------\n\nLoads 'controllers' that can mount routes to a cantina app.\n\nControllers are just broadway plugins, but they also support a 'routes'\nproperty that will be automatically mounted."
+        },
+        "cantina.plugins.http": {
+            "name": "cantina.plugins.http",
+            "shortname": "cantina.plugins.http",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "cantina",
+            "namespace": "",
+            "file": "node_modules/cantina/lib/plugins/http.js",
+            "line": 13,
+            "description": "Http Plugin\n-----------\n\nLoads the flatiron http plugin and, optionally, sets up the application as\nan amino service."
+        },
+        "app": {
+            "name": "app",
+            "shortname": "app",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "cantina",
+            "namespace": "",
+            "file": "node_modules/cantina/lib/app.js",
+            "line": 8,
+            "description": "Cantina application instance\n----------------------------\n\nPresuming you created your cantina application in 'http' mode (the default),\nthe `app` instance is an http flatiron app.  A ton of functionality is\ninherited from flatiron and cantina extends it with some more.\n\nA simple cantina app is an http server that responds to a '/' route.\n\n    var cantina = require('cantina');\n\n    var app = cantina.createApp({\n      name: 'my-app',\n      description: 'My App',\n      version: '0.1.0',\n      amino: false, // Amino is for clustered apps, turn it off.\n      host: 'localhost', // Optional, this is the default host.\n      port: 8080 // Optional, this is the default port\n    });\n\n    app.router.get('/', function() {\n      this.res.html('<h1>My App</h1><p>Welcome to my awsome app!</p>');\n    });\n\n    app.start();"
+        },
+        "cantina.plugins.middleware": {
+            "name": "cantina.plugins.middleware",
+            "shortname": "cantina.plugins.middleware",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "cantina",
+            "namespace": "",
+            "file": "node_modules/cantina/lib/plugins/middleware.js",
+            "line": 13,
+            "description": "Middleware Plugin\n-----------------\n\nExposes an api for applications to attach route-aware middleware."
+        },
+        "cantina.plugins.utils": {
+            "name": "cantina.plugins.utils",
+            "shortname": "cantina.plugins.utils",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "cantina",
+            "namespace": "",
+            "file": "node_modules/cantina/lib/plugins/utils.js",
+            "line": 18,
+            "description": "Utils Plugin\n------------\n\nProvides utility function and exposes them on a cantina application object."
+        },
+        "cantina": {
+            "name": "cantina",
+            "shortname": "cantina",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "cantina",
+            "namespace": "",
+            "file": "node_modules/cantina/lib/cantina.js",
+            "line": 23,
+            "description": "Cantina API\n-----------\n\nCreate applications, attach plugins, and start up services.\n\n###Example:###\n\n    var cantina = require('cantina');\n\n    var app = cantina.createApp({\n      name: 'my-app',\n      version: '0.1.0',\n      mode: 'http',\n      amino: false,\n      host: 'localhost',\n      port: 8080\n    });\n\n    app.router.get('/', function() {\n      this.res.end('Hello, world!')\n    });\n\n    app.start();"
+        },
+        "views.plugin.helpers": {
+            "name": "views.plugin.helpers",
+            "shortname": "views.plugin.helpers",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "cantina",
+            "submodule": "views",
+            "namespace": "",
+            "file": "node_modules/cantina-views/lib/helpers.js",
+            "line": 14,
+            "description": "Views Helpers Plugin\n--------------------\n\nExposes `app.views.helper` and `app.views.clearHelpers`.\n\nLoaded automatically by the views plugin."
+        },
+        "app.views": {
+            "name": "app.views",
+            "shortname": "app.views",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "cantina",
+            "submodule": "views",
+            "namespace": "",
+            "file": "node_modules/cantina-views/lib/plugin.js",
+            "line": 57,
+            "description": "Views API\n---------\n\nApplication-level api for registering views namespaces, partials, and\nhelpers."
+        },
+        "views": {
+            "name": "views",
+            "shortname": "views",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "cantina",
+            "submodule": "views",
+            "namespace": "",
+            "file": "node_modules/cantina-views/lib/index.js",
+            "line": 21,
+            "description": "Views\n-----\n\nCantina views exposes a plugin for use in your application.  You can\nuse the plugin like:\n\n    app.use(require('cantina-views').plugin, {\n      // options\n    });\n\nSee the `cantina-views.plugin` docs for more info."
+        },
+        "views.plugin.partials": {
+            "name": "views.plugin.partials",
+            "shortname": "views.plugin.partials",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "cantina",
+            "submodule": "views",
+            "namespace": "",
+            "file": "node_modules/cantina-views/lib/partials.js",
+            "line": 16,
+            "description": "Views Partials Plugin\n---------------------\n\nExposes `app.views.partials`.\n\nLoaded automatically by the views plugin."
+        },
+        "views.plugin": {
+            "name": "views.plugin",
+            "shortname": "views.plugin",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "cantina",
+            "submodule": "views",
+            "namespace": "",
+            "file": "node_modules/cantina-views/lib/plugin.js",
+            "line": 20,
+            "description": "Views Plugin\n------------\n\nProvides a full-featured system for discovering and rendering views."
+        },
+        "views.plugin.registry": {
+            "name": "views.plugin.registry",
+            "shortname": "views.plugin.registry",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "cantina",
+            "submodule": "views",
+            "namespace": "",
+            "file": "node_modules/cantina-views/lib/registry.js",
+            "line": 15,
+            "description": "Views Registry Plugin\n--------------------\n\nExposes `app.views.register`, `app.views.find`, and `app.views.findDir`.\n\nLoaded automatically by the views plugin."
+        }
+    },
+    "classitems": [
+        {
+            "file": "node_modules/cantina/lib/cli/create.js",
+            "line": 19,
+            "description": "The 'create' command.",
+            "itemtype": "method",
+            "name": "create",
+            "params": [
+                {
+                    "name": "type",
+                    "description": "The type of scaffolding to create.  Can be one of:\n\n  - `app`: An application with a start script, public dir, views, dir, etc.\n  - `service`: A service with a start script, service app, and a plugin.\n  - `plugin`: A simple application plugin.",
+                    "type": "String",
+                    "optional": true
+                },
+                {
+                    "name": "callback",
+                    "description": "Will be called when the command is complete.",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "null"
+            },
+            "async": 1,
+            "class": "cantina.cli",
+            "module": "cantina"
+        },
+        {
+            "file": "node_modules/cantina/lib/plugins/controllers.js",
+            "line": 30,
+            "description": "Attach the plugin to an application.\n\nAll .js modules found under `options.path` will be loaded and attached to\nthe app (they are assumed to be plugins).\n\nThe plugins will also be checked for a `routes` property that will be\nmounted to the app's router.  The `routes` poperty is a director-style\nrouting table like:\n\n    exports.routes = {\n      '/': {\n        'get': index // <---- A function that will be called in the router scope.\n      }\n    };",
+            "itemtype": "method",
+            "name": "attach",
+            "params": [
+                {
+                    "name": "options",
+                    "description": "Plugin options.  Can include:\n\n  - `path`: Path to the controllers directory, relative to the application\n            root (app.root).",
+                    "type": "Object"
+                }
+            ],
+            "class": "cantina.plugins.controllers",
+            "module": "cantina"
+        },
+        {
+            "file": "node_modules/cantina/lib/plugins/http.js",
+            "line": 27,
+            "description": "Attach the plugin to an application.\n\nIf the app is using amno, then the app's start() method will start up an\namino service with a name and version based on package.json or the options.\n\nOtherwise, the app will be started as regular flatiron http app.",
+            "itemtype": "method",
+            "name": "attach",
+            "params": [
+                {
+                    "name": "options",
+                    "description": "Application options.  If the app is NOT using amino,\n  then `host` and `port` can be specified here.",
+                    "type": "Object"
+                }
+            ],
+            "class": "cantina.plugins.http",
+            "module": "cantina"
+        },
+        {
+            "file": "node_modules/cantina/lib/plugins/http.js",
+            "line": 76,
+            "description": "Setup the application as an amino service.",
+            "itemtype": "method",
+            "name": "setupAmino",
+            "params": [
+                {
+                    "name": "app",
+                    "description": "The cantina application instance.",
+                    "type": "Object"
+                },
+                {
+                    "name": "options",
+                    "description": "The application options.",
+                    "type": "Object"
+                }
+            ],
+            "class": "cantina.plugins.http",
+            "module": "cantina"
+        },
+        {
+            "file": "node_modules/cantina/lib/plugins/http.js",
+            "line": 97,
+            "description": "Expose `amino` on the application.  Allows plugins to interract with\namino without needing to explicitly require it.",
+            "itemtype": "property",
+            "name": "amino",
+            "type": "{Object}",
+            "class": "app",
+            "module": "cantina"
+        },
+        {
+            "file": "node_modules/cantina/lib/plugins/http.js",
+            "line": 110,
+            "description": "If `options.amino === true`, overrides `app.start()` to create an amino\nservice and listen on it.\n\nWill emit a 'started' event on the app.",
+            "itemtype": "method",
+            "name": "start",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "(err) Called after the app has been started.",
+                    "type": "Function",
+                    "optional": true
+                }
+            ],
+            "class": "app",
+            "module": "cantina"
+        },
+        {
+            "file": "node_modules/cantina/lib/plugins/http.js",
+            "line": 121,
+            "description": "Creates and saves a reference to the amino service.",
+            "itemtype": "property",
+            "name": "service",
+            "type": "{Object}",
+            "class": "app",
+            "module": "cantina"
+        },
+        {
+            "file": "node_modules/cantina/lib/plugins/http.js",
+            "line": 145,
+            "description": "If `options.amino === false`, stops the amino-powered application and\ncloses the service.",
+            "itemtype": "method",
+            "name": "stop",
+            "params": [
+                {
+                    "name": "hard",
+                    "description": "If true, then immediately clear the service\n  from the globalAgent.  Useful for testing.",
+                    "type": "Boolean",
+                    "optional": true
+                },
+                {
+                    "name": "callback",
+                    "description": "(err) Called after the app has been stopped.",
+                    "type": "Function",
+                    "optional": true
+                }
+            ],
+            "class": "app",
+            "module": "cantina"
+        },
+        {
+            "file": "node_modules/cantina/lib/plugins/http.js",
+            "line": 172,
+            "description": "Setup a cantina app as a plain flatiron application.",
+            "itemtype": "method",
+            "name": "setupHttp",
+            "params": [
+                {
+                    "name": "app",
+                    "description": "The cantina application instance.",
+                    "type": "Object"
+                },
+                {
+                    "name": "options",
+                    "description": "The application options.",
+                    "type": "Object"
+                }
+            ],
+            "class": "cantina.plugins.http",
+            "module": "cantina"
+        },
+        {
+            "file": "node_modules/cantina/lib/plugins/http.js",
+            "line": 193,
+            "description": "If `options.amino === false`, overrides `app.start()` to work with the\napplication options.\n\nWill emit a 'started' event on the app.",
+            "itemtype": "method",
+            "name": "start",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "(err) Called after the app has been started.",
+                    "type": "Function",
+                    "optional": true
+                }
+            ],
+            "class": "app",
+            "module": "cantina"
+        },
+        {
+            "file": "node_modules/cantina/lib/plugins/http.js",
+            "line": 224,
+            "description": "If `options.amino === false`, stops the application.",
+            "itemtype": "method",
+            "name": "stop",
+            "params": [
+                {
+                    "name": "callback",
+                    "description": "(err) Called after the app has been stopped.",
+                    "type": "Function",
+                    "optional": true
+                }
+            ],
+            "class": "app",
+            "module": "cantina"
+        },
+        {
+            "file": "node_modules/cantina/lib/plugins/middleware.js",
+            "line": 26,
+            "description": "Attach the plugin to an application.\n\nAdds the `app.middleware()` method.",
+            "itemtype": "method",
+            "name": "attach",
+            "params": [
+                {
+                    "name": "options",
+                    "description": "Plugin options.",
+                    "type": "Object",
+                    "optional": true
+                }
+            ],
+            "class": "cantina.plugins.middleware",
+            "module": "cantina"
+        },
+        {
+            "file": "node_modules/cantina/lib/plugins/middleware.js",
+            "line": 39,
+            "description": "Attach route-aware middleware to an application",
+            "itemtype": "method",
+            "name": "middleware",
+            "params": [
+                {
+                    "name": "method",
+                    "description": "HTTP method ex. 'GET', 'POST', 'PUT', etc.",
+                    "type": "String",
+                    "optional": true
+                },
+                {
+                    "name": "path",
+                    "description": "A string, regex, or glob to match against\n  the request urls.",
+                    "type": "String|RegExp",
+                    "optional": true
+                },
+                {
+                    "name": "fns",
+                    "description": "An array of middleware functions, or a\n  single function.",
+                    "type": "Function|Array"
+                }
+            ],
+            "return": {
+                "description": "The application instance.",
+                "type": "Object"
+            },
+            "chainable": 1,
+            "class": "app",
+            "module": "cantina"
+        },
+        {
+            "file": "node_modules/cantina/lib/plugins/middleware.js",
+            "line": 81,
+            "description": "Determine if a path filter matches the requested url.",
+            "itemtype": "method",
+            "name": "isMatch",
+            "params": [
+                {
+                    "name": "method",
+                    "description": "An HTTP method or '*'.",
+                    "type": "String",
+                    "optional": true
+                },
+                {
+                    "name": "path",
+                    "description": "A string, glob, or regex to test.",
+                    "type": "String|RegExp",
+                    "optional": true
+                },
+                {
+                    "name": "req",
+                    "description": "An http request object.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "Whether or not the method and/or path matches the current\n  request url.",
+                "type": "Boolean"
+            },
+            "class": "cantina.plugins.middleware",
+            "module": "cantina"
+        },
+        {
+            "file": "node_modules/cantina/lib/plugins/utils.js",
+            "line": 31,
+            "description": "Attach the plugin to an application.",
+            "itemtype": "method",
+            "name": "attach",
+            "params": [
+                {
+                    "name": "options",
+                    "description": "The plugin options.",
+                    "type": "Object"
+                }
+            ],
+            "class": "cantina.plugins.utils",
+            "module": "cantina"
+        },
+        {
+            "file": "node_modules/cantina/lib/plugins/utils.js",
+            "line": 40,
+            "description": "Application utilities (mirrored from `cantina.plugins.utils`).\n\nPlease see the `cantina.plugins.utils` docs for more info.",
+            "itemtype": "property",
+            "name": "utils",
+            "type": "{Object}",
+            "class": "app",
+            "module": "cantina"
+        },
+        {
+            "file": "node_modules/cantina/lib/plugins/utils.js",
+            "line": 57,
+            "description": "Extend an object with defaults.",
+            "itemtype": "method",
+            "name": "defaults",
+            "params": [
+                {
+                    "name": "obj",
+                    "description": "The object to extend.",
+                    "type": "Object"
+                },
+                {
+                    "name": "props",
+                    "description": "An object containing the defaults.",
+                    "type": "Object"
+                }
+            ],
+            "example": [
+                "\n    var options = {\n      color: 'red'\n    };\n\n    app.utils.defaults(options, {\n      color: 'blue',\n      size: 'small'\n    });\n\n    console.dir(options);\n    // { color: 'red', size: 'small' }"
+            ],
+            "class": "cantina.plugins.utils",
+            "module": "cantina"
+        },
+        {
+            "file": "node_modules/cantina/lib/plugins/utils.js",
+            "line": 88,
+            "description": "Attach modules to an object as lazy-loaded properties.",
+            "itemtype": "method",
+            "name": "lazy",
+            "params": [
+                {
+                    "name": "obj",
+                    "description": "The target object to extend with the module properties.",
+                    "type": "Object"
+                },
+                {
+                    "name": "root",
+                    "description": "A path for which the `paths` will be assumed to be\n  relative to.",
+                    "type": "String",
+                    "optional": true
+                },
+                {
+                    "name": "paths",
+                    "description": "An object where keys are property names and values\n  are paths to modules.",
+                    "type": "Object"
+                }
+            ],
+            "example": [
+                "\n    // Expose some sub-modules as lazy-loaded exports.\n    cantina.plugins.utils.lazy(module.exports, __dirname, {\n      cool: 'submodules/cool',\n      groovy: 'submodules/groovy'\n    });\n\n    // Now module.exports will have `cool` and `groovy` properties that,\n    // when accessed, will require() their respective modules and provide\n    // those module's exports."
+            ],
+            "class": "cantina.plugins.utils",
+            "module": "cantina"
+        },
+        {
+            "file": "node_modules/cantina/lib/plugins/utils.js",
+            "line": 136,
+            "description": "Parse a url and cache the results for repeated calls.",
+            "itemtype": "method",
+            "name": "parseUrl",
+            "params": [
+                {
+                    "name": "url",
+                    "description": "The url to parse.",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "The parsed url.",
+                "type": "Object"
+            },
+            "class": "cantina.plugins.utils",
+            "module": "cantina"
+        },
+        {
+            "file": "node_modules/cantina/lib/app.js",
+            "line": 39,
+            "description": "Attach a plugin to the application.  Plugins should conform to the following\ninterface:\n\n    var plugin = {\n      \"name\": \"example-plugin\", // Plugin's name\n\n      \"attach\": function attach(options) {\n        // Called with plugin options once plugin attached to application\n        // `this` - is a reference to application\n      },\n\n      \"detach\": function detach() {\n        // Called when plugin detached from application\n        // (Only if plugin with same name was attached)\n        // `this` - is a reference to application\n      },\n\n      \"init\": function init(callback) {\n        // Called on application initialization\n        // App#init(callback) will be called once every plugin will call `callback`\n        // `this` - is a reference to application\n      }\n    };",
+            "itemtype": "method",
+            "name": "use",
+            "params": [
+                {
+                    "name": "plugin",
+                    "description": "The plugin to attach.",
+                    "type": "Object"
+                },
+                {
+                    "name": "options",
+                    "description": "Options to pass to he plugin durring attachment.",
+                    "type": "Object",
+                    "optional": true
+                }
+            ],
+            "class": "app",
+            "module": "cantina"
+        },
+        {
+            "file": "node_modules/cantina/lib/app.js",
+            "line": 71,
+            "description": "The application's director router instance.\n\nSee [http://github.com/flatiron/director](http://github.com/flatiron/director)\nfor mor detailed documentation.",
+            "itemtype": "property",
+            "name": "router",
+            "type": "{director.Router}",
+            "class": "app",
+            "module": "cantina"
+        },
+        {
+            "file": "node_modules/cantina/lib/app.js",
+            "line": 83,
+            "description": "The application's HTTP/HTTPS server instance.",
+            "itemtype": "property",
+            "name": "server",
+            "type": "{http.Server}",
+            "class": "app",
+            "module": "cantina"
+        },
+        {
+            "file": "node_modules/cantina/lib/cantina.js",
+            "line": 52,
+            "description": "Lazy-loaded modules in `lib/plugins` that can be attached to cantina apps.\n\nUse like:\n\n    app.use(cantina.plugins.controllers, {... options ...});",
+            "itemtype": "property",
+            "name": "plugins",
+            "type": "{Object}",
+            "class": "cantina",
+            "module": "cantina"
+        },
+        {
+            "file": "node_modules/cantina/lib/cantina.js",
+            "line": 64,
+            "description": "Getter for `cantina.app`.\n\nCreates an instance of a new application with the default options and caches\nit for future references.",
+            "itemtype": "property",
+            "name": "app",
+            "type": "{Object}",
+            "class": "cantina",
+            "module": "cantina"
+        },
+        {
+            "file": "node_modules/cantina/lib/cantina.js",
+            "line": 80,
+            "description": "Create a cantina application.",
+            "itemtype": "method",
+            "name": "createApp",
+            "params": [
+                {
+                    "name": "options",
+                    "description": "Application options and info. Can include:\n\n  - `mode`   : Either 'cli' or 'http'(default).\n  - `amino`  : true(default) or false.\n  - `name`   : A unique name for your application.  Used as the service name\n                 if this is an amino service.\n  - `version`: Should follow the semver standard.\n  - `root`   : The absolute path to the root directory of the application.\n                 It can normally be  normally autodiscovered.\n  - `...`    : Other options will be passed through to the http/cli plugin.",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "The application object.",
+                "type": "Object"
+            },
+            "class": "cantina",
+            "module": "cantina"
+        },
+        {
+            "file": "node_modules/cantina-views/lib/helpers.js",
+            "line": 29,
+            "description": "Attach the helpers plugin to an application.",
+            "itemtype": "method",
+            "name": "attach",
+            "params": [
+                {
+                    "name": "options",
+                    "description": "Plugin options.",
+                    "type": "Object"
+                }
+            ],
+            "class": "views.plugin.helpers",
+            "module": "cantina",
+            "submodule": "views"
+        },
+        {
+            "file": "node_modules/cantina-views/lib/helpers.js",
+            "line": 39,
+            "description": "Helpers registry.",
+            "itemtype": "property",
+            "name": "_helpers",
+            "access": "private",
+            "tagname": "",
+            "type": "{Object}",
+            "class": "app.views",
+            "module": "cantina",
+            "submodule": "views"
+        },
+        {
+            "file": "node_modules/cantina-views/lib/helpers.js",
+            "line": 49,
+            "description": "Register a views helper.\n\nA helper can either be an object literal that will be merged with the\nother template data, or a function. Function ('dynamic') helpers allow\nyou to add template data based on a request.\n\nHelper functions will be called in the router scope (this.req, this.res,\nthis.app) during the view rendering phase.  Helper funtions accept a\ncallback that should be called with the arguments `callback(err, data)`.",
+            "itemtype": "method",
+            "name": "helper",
+            "params": [
+                {
+                    "name": "match",
+                    "description": "If specified, the helper will only be\n  applied for urls that match this pattern.",
+                    "type": "String|RegExp",
+                    "optional": true
+                },
+                {
+                    "name": "helper",
+                    "description": "Template data or a helper function.",
+                    "type": "Object|Function"
+                }
+            ],
+            "class": "app.views",
+            "module": "cantina",
+            "submodule": "views"
+        },
+        {
+            "file": "node_modules/cantina-views/lib/helpers.js",
+            "line": 82,
+            "description": "Clear all views helpers.",
+            "itemtype": "method",
+            "name": "clearHelpers",
+            "params": [
+                {
+                    "name": "match",
+                    "description": "Only clear helpers registerd under this\n  match pattern.",
+                    "type": "String|RegExp",
+                    "optional": true
+                }
+            ],
+            "class": "app.views",
+            "module": "cantina",
+            "submodule": "views"
+        },
+        {
+            "file": "node_modules/cantina-views/lib/helpers.js",
+            "line": 102,
+            "description": "Process views helpers.  Shoud be invoked in the 'router' scope.",
+            "itemtype": "method",
+            "name": "_processHelpers",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "templateData",
+                    "description": "Template data to be extended.",
+                    "type": "Object"
+                },
+                {
+                    "name": "callback",
+                    "description": "(err) Callback to be invoked after all registered\n  helpers have been processed.",
+                    "type": "Function"
+                }
+            ],
+            "class": "app.views",
+            "module": "cantina",
+            "submodule": "views"
+        },
+        {
+            "file": "node_modules/cantina-views/lib/partials.js",
+            "line": 31,
+            "description": "Attach the partials plugin to an application.",
+            "itemtype": "method",
+            "name": "attach",
+            "params": [
+                {
+                    "name": "options",
+                    "description": "Plugin options.",
+                    "type": "Object"
+                }
+            ],
+            "class": "views.plugin.partials",
+            "module": "cantina",
+            "submodule": "views"
+        },
+        {
+            "file": "node_modules/cantina-views/lib/partials.js",
+            "line": 44,
+            "description": "Partials registry.",
+            "itemtype": "property",
+            "name": "_partials",
+            "access": "private",
+            "tagname": "",
+            "type": "{Object}",
+            "class": "app.views",
+            "module": "cantina",
+            "submodule": "views"
+        },
+        {
+            "file": "node_modules/cantina-views/lib/partials.js",
+            "line": 54,
+            "description": "Register partials.",
+            "itemtype": "method",
+            "name": "partials",
+            "params": [
+                {
+                    "name": "match",
+                    "description": "A string or regex to limit partial rendering\n  to matching urls.",
+                    "type": "String|RegExp",
+                    "optional": true
+                },
+                {
+                    "name": "source",
+                    "description": "The path to a directory of views.  Registered\n  namespaces will be honored. The directory will be recursively searched\n  for views matching options.ext,  and those will be rendered and attached\n  to the template data as properties matching the filename with the\n  extension stripped.",
+                    "type": "String"
+                }
+            ],
+            "class": "app.views",
+            "module": "cantina",
+            "submodule": "views"
+        },
+        {
+            "file": "node_modules/cantina-views/lib/partials.js",
+            "line": 105,
+            "description": "Process the app partials, rendering them and merging them with the passed\ntemplateData object.\n\nShould be invoked in the router scope.",
+            "itemtype": "method",
+            "name": "_processPartials",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "templateData",
+                    "description": "The template data object to extend.",
+                    "type": "Object"
+                },
+                {
+                    "name": "callback",
+                    "description": "A callback to once the partials have been\n  processed.",
+                    "type": "Function"
+                }
+            ],
+            "class": "app.views",
+            "module": "cantina",
+            "submodule": "views"
+        },
+        {
+            "file": "node_modules/cantina-views/lib/partials.js",
+            "line": 161,
+            "description": "Recursively loop through partials and render them.",
+            "itemtype": "method",
+            "name": "_renderPartials",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "partials",
+                    "description": "The top-level partials to render.",
+                    "type": "Object"
+                },
+                {
+                    "name": "templateData",
+                    "description": "The template data object to extend.",
+                    "type": "Object"
+                },
+                {
+                    "name": "callback",
+                    "description": "A callback to invoke after all the partials\n  have been rendered and merged into the template data.",
+                    "type": "Function"
+                }
+            ],
+            "class": "app.views",
+            "module": "cantina",
+            "submodule": "views"
+        },
+        {
+            "file": "node_modules/cantina-views/lib/plugin.js",
+            "line": 33,
+            "description": "Attach the views plugin to an application.\n\nLoads the following sub-plugins:\n\n  - `views.plugin.helpers`\n  - `views.plugin.registry`\n  - `views.plugin.partials`\n\nRegisters the root views namespace (based on options or the defaults).\n\nExposes `app.views` and `app.render()`.",
+            "itemtype": "method",
+            "name": "attach",
+            "params": [
+                {
+                    "name": "options",
+                    "description": "Plugin options.",
+                    "type": "Object"
+                }
+            ],
+            "class": "views.plugin",
+            "module": "cantina",
+            "submodule": "views"
+        },
+        {
+            "file": "node_modules/cantina-views/lib/plugin.js",
+            "line": 78,
+            "description": "Stringify a path, preparing it to be converted to new RegExp.",
+            "itemtype": "method",
+            "name": "_stringifyPath",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "path",
+                    "description": "The string or regular expression to normalize.",
+                    "type": "String|RegExp"
+                }
+            ],
+            "return": {
+                "description": "The normalized string representation of the path.",
+                "type": "String"
+            },
+            "class": "app.views",
+            "module": "cantina",
+            "submodule": "views"
+        },
+        {
+            "file": "node_modules/cantina-views/lib/plugin.js",
+            "line": 111,
+            "description": "Render views.\n\nThis function is available in the 'router' scope (ie `this` in a route\nhandler).  It is NOT available on `app`.",
+            "itemtype": "method",
+            "name": "render",
+            "params": [
+                {
+                    "name": "view",
+                    "description": "The path to a template, relative to ANY registered\n  views namespace, excluding the template extension.",
+                    "type": "String"
+                },
+                {
+                    "name": "opts",
+                    "description": "Template data and/or engine-specific options.",
+                    "type": "Object"
+                },
+                {
+                    "name": "cb",
+                    "description": "(err, str) Callback to handle the rendered text. A\n  default callback is provided which calls `this.res.html(str)`.",
+                    "type": "Function",
+                    "optional": true
+                }
+            ],
+            "example": [
+                "\n    var app = cantina.app;\n    app.use(require('cantina-views').plugin);\n\n    // The default cantina-views options assume you have a ./lib/views\n    // directory and registers it as the 'root' namespace.  Templates\n    // inside the registered directory can then be rendered like:\n\n    app.router.get('/', function() {\n      this.render('index', {title: 'A title', body: 'The Body'})\n    });"
+            ],
+            "class": "app",
+            "module": "cantina",
+            "submodule": "views"
+        },
+        {
+            "file": "node_modules/cantina-views/lib/registry.js",
+            "line": 30,
+            "description": "Attach the registry plugin to an application.",
+            "itemtype": "method",
+            "name": "attach",
+            "params": [
+                {
+                    "name": "options",
+                    "description": "Plugin options.",
+                    "type": "Object"
+                }
+            ],
+            "class": "views.plugin.registry",
+            "module": "cantina",
+            "submodule": "views"
+        },
+        {
+            "file": "node_modules/cantina-views/lib/registry.js",
+            "line": 40,
+            "description": "Views registry.",
+            "itemtype": "property",
+            "name": "_registry",
+            "access": "private",
+            "tagname": "",
+            "type": "{Object}",
+            "class": "app.views",
+            "module": "cantina",
+            "submodule": "views"
+        },
+        {
+            "file": "node_modules/cantina-views/lib/registry.js",
+            "line": 50,
+            "description": "Views cache.",
+            "itemtype": "property",
+            "name": "_cache",
+            "access": "private",
+            "tagname": "",
+            "type": "{Object}",
+            "class": "app.views",
+            "module": "cantina",
+            "submodule": "views"
+        },
+        {
+            "file": "node_modules/cantina-views/lib/registry.js",
+            "line": 60,
+            "description": "Register a views namespace.\n\nA views namespace associates a template prefix with a root directory\nand some default options. A great use-case for multiple views\nnamespaces is when application plugins would like to expose views that\nthe main app can render.",
+            "itemtype": "method",
+            "name": "register",
+            "params": [
+                {
+                    "name": "prefix",
+                    "description": "A template path prefix, no trailing slash.",
+                    "type": "String"
+                },
+                {
+                    "name": "root",
+                    "description": "The absolute path to directoy of views being\n  registered.",
+                    "type": "String"
+                },
+                {
+                    "name": "opts",
+                    "description": "Default options for all the views in this directory.\n  Typically, this would include a custom templating engine and extension.",
+                    "type": "Object"
+                }
+            ],
+            "class": "app.views",
+            "module": "cantina",
+            "submodule": "views"
+        },
+        {
+            "file": "node_modules/cantina-views/lib/registry.js",
+            "line": 109,
+            "description": "Find the real path to a template.\n\nFetch the path for a view, searching through all registered namespaces.\nNamespaces are searched in reverse order of their registration.\nAlso, merges in the namespace default options.",
+            "itemtype": "method",
+            "name": "find",
+            "params": [
+                {
+                    "name": "target",
+                    "description": "A namespaced (prefix) path to a view.",
+                    "type": "String"
+                },
+                {
+                    "name": "opts",
+                    "description": "An options object that will have the namespace\n  defaults merged in.",
+                    "type": "Object"
+                }
+            ],
+            "class": "app.views",
+            "module": "cantina",
+            "submodule": "views"
+        },
+        {
+            "file": "node_modules/cantina-views/lib/registry.js",
+            "line": 167,
+            "description": "Find a views directory.\n\nFetch the full path to a views directory, searching through all registered\nnamespaces.  Namespaces are searched in reverse order of their\nregistration.",
+            "itemtype": "method",
+            "name": "findDir",
+            "params": [
+                {
+                    "name": "target",
+                    "description": "A namespaced (prefix) path to a views directory.",
+                    "type": "String"
+                }
+            ],
+            "class": "app.views",
+            "module": "cantina",
+            "submodule": "views"
+        }
+    ]
+}
